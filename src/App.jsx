@@ -1,7 +1,7 @@
 import React from 'react'
 import Overlay from './components/Overlay'
 import Module from './components/module'
-import './app.css'
+import './App.css'
 import { GlobalProvider } from './components/hooks'
 import { Toaster } from 'react-hot-toast'
 

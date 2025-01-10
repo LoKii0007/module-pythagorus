@@ -10,7 +10,7 @@ const AudioPlayer = () => {
     setPlaying(!playing); // toggle playing state
   };
 
-  const {activeAudio, playAudio} = useGlobal()
+  const {activeAudio, playAudio, setActiveAudio, setPlayAudio} = useGlobal()
 
   useEffect(()=>{
     if(playAudio){
@@ -18,11 +18,10 @@ const AudioPlayer = () => {
     }
   }, [playAudio, activeAudio])
 
-//   useEffect(()=>{
-//     if(playAudio){
-//         setPlaying(true)
-//     }
-//   }, [activeAudio])
+  useEffect(()=>{
+    // setActiveAudio('start.mp3')
+    setPlayAudio(true)
+  }, [])
 
   return (
     <div>

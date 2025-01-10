@@ -1,21 +1,28 @@
-import React from 'react';
-import * as THREE from 'three';
-import Triangle from './Triangle';
+import React, { useEffect } from 'react';
+import { useGlobal } from './hooks';
+import Triangle1 from '../models/Triangle1';
+import Triangle2 from '../models/Triangle2';
+import Triangle3 from '../models/Triangle3';
 
 const Question = () => {
-    const vertices = [
-        new THREE.Vector3(0, 2, 0),
-        new THREE.Vector3(-2, 0, 0),
-        new THREE.Vector3(2, 0, 0)
-      ];
 
-      console.log(vertices);
+  const {activeQuestion} = useGlobal()
+
+  useEffect(()=>{
+
+  }, [activeQuestion])
 
   return (
     <>
-      <group position={[0, 0, 0]}>
-        {/* <Triangle /> */}
-      </group>
+      {
+        activeQuestion === 'a' && <Triangle1 />
+      }
+      {
+        activeQuestion === 'b' && <Triangle2 />
+      }
+      {
+        activeQuestion === 'c' && <Triangle3 />
+      }
     </>
   );
 };

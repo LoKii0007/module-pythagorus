@@ -1,0 +1,50 @@
+.canvas{
+  height: 100vh;
+  width: 100vw;
+  background-color: #1D1616;
+}
+
+.green-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px; 
+  background: green; 
+  border-radius: 50%; 
+}
+
+.green-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  border-radius: 50%;
+  border: 2px solid green;
+}
+
+.blue-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px; 
+  background: blue; 
+  border-radius: 50%; 
+}
+
+.blue-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border-radius: 50%;
+  border: 2px solid green;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Remove arrows in Firefox */
+  appearance: textfield;      /* General rule for newer browsers */
+}

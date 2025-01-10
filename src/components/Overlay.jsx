@@ -224,7 +224,7 @@ const Overlay = () => {
               type="range"
               min="1"
               max="5"
-              step="0.01"
+              step="0.1"
               value={sideB}
               onChange={(e) => setSideB(Number(e.target.value))}
               className="w-full h-2 bg-green-500/30 rounded-lg appearance-none cursor-pointer"
